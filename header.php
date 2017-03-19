@@ -92,7 +92,7 @@
 			
 		</div> <!-- /navigation -->
 		
-		<div class="header-image" style="background-image: url(<?php if (get_header_image() != '') : ?><?php header_image(); ?><?php else : ?><?php echo get_template_directory_uri() . '/images/bg.jpg'; ?><?php endif; ?>);"></div>
+		<div class="header-image"></div>
 	
 		<div class="header section-inner">
 		
