@@ -2,7 +2,13 @@
 
 <div class="content section-inner">
 																	                    
-	<?php if (have_posts()) : ?>
+	<?php
+  $args = array(       // set up arguments
+    'post_type' => 'page',          // Only Pages
+    'post__in' => array(64,67,69)   // tea,kimono,karuta only
+    );
+  $query = new WP_query($args);
+  if ($query->have_posts()) : ?>
 	
 		<?php
 		$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
@@ -24,11 +30,13 @@
 	
 		<div class="posts" id="posts">
 				
-	    	<?php while (have_posts()) : the_post(); ?>
+	    	<?php while ($query->have_posts()) : $query->the_post(); ?>
 	    	
 	    		<?php get_template_part( 'content', get_post_format() ); ?>
 	    		
-	        <?php endwhile; ?>
+	        <?php endwhile;
+          wp_reset_postdata();
+          ?>
 	        
 	        <div class="clear"></div>
 				
