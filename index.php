@@ -5,7 +5,8 @@
 	<?php
   $args = array(       // set up arguments
     'post_type' => 'page',          // Only Pages
-    'post__in' => array(64,67,69)   // tea,kimono,karuta only
+//    'post__not_in' => array(12,18,20),   // Exclude blog,contact
+    'orderby' => 'menu_order'
     );
   $query = new WP_query($args);
   if ($query->have_posts()) : ?>
