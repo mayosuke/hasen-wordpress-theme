@@ -1922,7 +1922,7 @@ img#wpstats { display: none; }
 		display: block;
 		padding: 20px 5%;
 		text-transform: uppercase;
-		color: #fff;
+		color: #1d1d1d;
 	}
 	
 	.mobile-menu ul a { padding-left: 10%; }
@@ -1941,7 +1941,7 @@ img#wpstats { display: none; }
 		font-size: 1rem;
 	}
 	
-	.mobile-navigation .search-field:focus { color: #fff; }
+	.mobile-navigation .search-field:focus { color: #1d1d1d; }
 	
 	.mobile-navigation .search-button {
 		width: 60px;
