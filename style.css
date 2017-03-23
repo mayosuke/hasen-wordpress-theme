@@ -431,7 +431,7 @@ input[type="button"],
 /* -------------------------------------------------------------------------------- */
 
 
-.header { padding: 70px 0; }
+.header { padding: 10px 0; }
 
 .header.section-inner { 
 	width: 325px; 
@@ -2035,7 +2035,6 @@ img#wpstats { display: none; }
 	/* Structure --------------------------------------- */	
 	
 	
-	.header,
 	.credits {
 		padding: 40px 0;
 	}
