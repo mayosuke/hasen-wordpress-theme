@@ -12,7 +12,9 @@
 		
 		<div class="archive-post-header">
 		
-		    <p class="archive-post-date"><?php the_time(get_option('date_format')); ?></p>
+		    <?php if ( get_post_type($post) == 'post' ) : ?>
+		      <p class="archive-post-date"><?php the_time(get_option('date_format')); ?></p>
+		    <?php endif; ?>
 							
 		    <?php if ( get_the_title() != '' ) : ?>
 		    	<h2 class="archive-post-title"><?php the_title(); ?></h2>
