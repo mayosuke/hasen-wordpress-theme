@@ -595,7 +595,7 @@ input[type="button"],
 .post-overlay {
 	background: #fff;
 	position: absolute;
-	top: 0;
+	top: 70%;
 	right: 0;
 	bottom: 0;
 	left: 0;
@@ -641,14 +641,14 @@ input[type="button"],
 	text-transform: uppercase;
 }
 
-.post:hover .post-overlay { opacity: 1; }
+/* .post:hover .post-overlay { opacity: 1; } */
 .post:hover .archive-post-title { color: #3bc492; }
 
 /* With Background Image */
 
 .has-post-thumbnail .post-overlay { 
-	background: rgba(0,0,0,0.75);
-	opacity: 0; 
+	background: rgba(0,0,0,0.5);
+	opacity: 1; 
 }
 
 .has-post-thumbnail .archive-post-header { bottom: 35px; }
