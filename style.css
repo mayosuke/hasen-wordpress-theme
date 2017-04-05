@@ -618,10 +618,7 @@ input[type="button"],
 }
 
 .archive-post-header {
-	position: absolute;
-	right: 30px;
-	bottom: 30px;
-	left: 30px;
+  padding: 15px;
 }
 
 .archive-post-title {
@@ -638,6 +635,13 @@ input[type="button"],
 	margin-bottom: 5px;
 	font-size: 0.875em;
 	color: #999;
+	text-transform: uppercase;
+}
+
+.archive-post-excerpt {
+	margin-bottom: 5px;
+	font-size: 0.875em;
+	color: #fff;
 	text-transform: uppercase;
 }
 

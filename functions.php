@@ -495,4 +495,16 @@ add_action( 'wp_head' , array( 'hitchcock_Customize' , 'hitchcock_header_output'
 // Enqueue live preview javascript in Theme Customizer admin screen
 add_action( 'customize_preview_init' , array( 'hitchcock_Customize' , 'hitchcock_live_preview' ) );
 
+add_post_type_support( 'page', 'excerpt' );
+
+/**
+ * Filter the except length to 20 words.
+ *
+ * @param int $length Excerpt length.
+ * @return int (Maybe) modified excerpt length.
+ */
+function wpdocs_custom_excerpt_length( $length ) {
+  return 20;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 ?>

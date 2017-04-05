@@ -18,6 +18,7 @@
 							
 		    <?php if ( get_the_title() != '' ) : ?>
 		    	<h2 class="archive-post-title"><?php the_title(); ?></h2>
+		      <p class="archive-post-excerpt"><?php echo get_the_excerpt(); ?></p>
 		    <?php endif; ?>
 	    
 		</div>
