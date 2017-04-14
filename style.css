@@ -35,7 +35,11 @@
 	14. Responsive
 
 ----------------------------------------------------------------------------------- */
-
+@font-face {
+    font-family: "Hannari";  
+    src: url(fonts/hannari/Hannari.otf);  
+    font-weight: normal;  
+}
 
 /* -------------------------------------------------------------------------------- */
 /*	0. CSS Reset
@@ -93,7 +97,7 @@ body {
 	background: #ffffff;
 	border: none;
 	color: #1d1d1d;
-	font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', sans-serif;
+	font-family: 'Hannari', 'Montserrat', 'Helvetica Neue', 'Helvetica', sans-serif;
 	-webkit-text-size-adjust: 100%;
 }
 
@@ -461,7 +465,7 @@ input[type="button"],
 
 .blog-description {
 	margin-top: 25px;
-	font-family: 'Droid Serif', Georgia, serif; 
+	font-family: 'Hannari', 'Droid Serif', Georgia, serif; 
 	line-height: 145%;
 	text-align: center;
 	color: #fff;
@@ -936,7 +940,7 @@ input[type="button"],
 
 
 .post-content { 
-	font-family: 'Droid Serif', Georgia, serif; 
+	font-family: 'Hannari', 'Droid Serif', Georgia, serif; 
 	color: #333;
 	position: relative;
 }
@@ -962,7 +966,7 @@ input[type="button"],
 
 .post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 { 
 	margin: 50px 0 25px; 
-	font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', sans-serif;
+	font-family: 'Hannari', 'Montserrat', 'Helvetica Neue', 'Helvetica', sans-serif;
 	text-transform: uppercase;
 }
 
@@ -1001,7 +1005,7 @@ input[type="button"],
 
 .post-content blockquote cite { 
 	display: block; 
-	font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', sans-serif;
+	font-family: 'Hannari', 'Montserrat', 'Helvetica Neue', 'Helvetica', sans-serif;
 	font-size: 0.875em;
 	line-height: 120%;
 	text-transform: uppercase;
@@ -1012,7 +1016,7 @@ input[type="button"],
 
 .post-content p.pull {
 	max-width: 45%;
-	font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', sans-serif;
+	font-family: 'Hannari', 'Montserrat', 'Helvetica Neue', 'Helvetica', sans-serif;
 	font-size: 1.6em;
 	line-height: 120%;
 	font-weight: 300;
@@ -1203,7 +1207,7 @@ code, kbd, pre {
     width: 100%;
     max-width: 100%;
     overflow: hidden;
-	font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', sans-serif;
+	font-family: 'Hannari', 'Montserrat', 'Helvetica Neue', 'Helvetica', sans-serif;
     font-size: 0.85em;
 }
 
@@ -1249,7 +1253,7 @@ tbody > tr:nth-child(odd) { background-color: #f6f6f6; }
 .post-content fieldset legend {
 	padding: 10px 11px;
 	background: #ddd;
-	font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', sans-serif;
+	font-family: 'Hannari', 'Montserrat', 'Helvetica Neue', 'Helvetica', sans-serif;
 	font-size: 13px;
 	line-height: 1;
 	font-weight: 700;
@@ -1259,7 +1263,7 @@ tbody > tr:nth-child(odd) { background-color: #f6f6f6; }
 }
 
 label { 
-	font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', sans-serif;
+	font-family: 'Hannari', 'Montserrat', 'Helvetica Neue', 'Helvetica', sans-serif;
 	font-size: 14px; 
 	color: #999;
 	text-transform: uppercase;
@@ -1267,7 +1271,7 @@ label {
 
 input,
 textarea { 
-	font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', sans-serif;
+	font-family: 'Hannari', 'Montserrat', 'Helvetica Neue', 'Helvetica', sans-serif;
 }
 
 input[type="text"],
@@ -1532,7 +1536,7 @@ input[type="submit"]:active {
 
 .logged-in-as { 
 	margin-bottom: 40px;
-	font-family: 'Droid Serif', Georgia, serif; 
+	font-family: 'Hannari', 'Droid Serif', Georgia, serif; 
 	font-size: 0.925em;
 	text-align: center;
 	font-style: italic;
@@ -1650,7 +1654,7 @@ p.comment-form-author { margin-right: 5%; }
 
 .archive-nav .sep {
 	margin: 0 20px;
-	font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; 
+	font-family: 'Hannari', "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; 
 	font-weight: 300; 
 	font-stretch: normal;
 	font-size: 40px;
