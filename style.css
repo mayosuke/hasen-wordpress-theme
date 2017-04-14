@@ -641,7 +641,7 @@ input[type="button"],
 .archive-post-excerpt {
 	margin-bottom: 5px;
 	font-size: 0.875em;
-	color: #fff;
+	color: #3d3d3d;
 	text-transform: uppercase;
 }
 
@@ -651,7 +651,7 @@ input[type="button"],
 /* With Background Image */
 
 .has-post-thumbnail .post-overlay { 
-	background: rgba(0,0,0,0.5);
+	background: rgba(255,255,255,0.7);
 	opacity: 1; 
 }
 
@@ -659,7 +659,7 @@ input[type="button"],
 .has-post-thumbnail:hover .archive-post-header { bottom: 30px; }
 
 .has-post-thumbnail .archive-post-title,
-.post.has-post-thumbnail:hover .archive-post-title { color: #fff; }
+.post.has-post-thumbnail:hover .archive-post-title { color: #3d3d3d; }
 
 
 /* -------------------------------------------------------------------------------- */
