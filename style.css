@@ -1809,11 +1809,11 @@ p.comment-form-author { margin-right: 5%; }
 }
 
 .credits p:first-child {
-	font-size: 1.175em;
-	color: #fff;
+	font-size: 0.825em;
+	color: #3d3d3d;
 }
 
-.credits p:first-child a { color: #fff; }
+.credits p:first-child a { color: #3d3d3d; }
 .credits p:first-child a:hover { color: #3bc492; }
 
 .credits p + p {
