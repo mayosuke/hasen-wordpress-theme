@@ -507,4 +507,31 @@ function wpdocs_custom_excerpt_length( $length ) {
   return 20;
 }
 add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+
+// 固定ページにカテゴリーを設定
+function add_categorie_to_pages(){
+  register_taxonomy_for_object_type('category', 'page');
+}
+add_action('init','add_categorie_to_pages');
+// カテゴリーアーカイブに固定ページを含める
+function add_page_to_category_archive( $query ) {
+  if ( $query->is_category== true && $query->is_main_query() ) {
+    $query->set('post_type', array( 'post', 'page' ));
+  }
+}
+add_action( 'pre_get_posts', 'add_page_to_category_archive' );
+
+// 固定ページにタグを設定
+function add_tag_to_page() {
+  register_taxonomy_for_object_type('post_tag', 'page');
+}
+add_action('init', 'add_tag_to_page');
+// タグアーカイブに固定ページを含める
+function add_page_to_tag_archive( $obj ) {
+  if ( is_tag() ) {
+    $obj->query_vars['post_type'] = array( 'post', 'page' );
+  }
+}
+add_action( 'pre_get_posts', 'add_page_to_tag_archive' );
+
 ?>
