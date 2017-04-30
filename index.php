@@ -1,14 +1,15 @@
 <?php get_header(); ?>
 
+<?php $cat_name = 'services'; ?>
 <div class="content section-inner">
-  <h2 class="content-category">Services</h2>
+  <h2 class="content-category"><?php echo get_cat_name(get_category_by_slug( $cat_name )->term_id); ?></h2>
 
 	<?php
   $args = array(       // set up arguments
     'post_type' => 'page',          // Only Pages
 //    'post__not_in' => array(12,18,20),   // Exclude blog,contact
     'orderby' => 'menu_order',
-    'category_name' => 'services'
+    'category_name' => $cat_name
     );
   $query = new WP_query($args);
   if ($query->have_posts()) :
@@ -49,16 +50,16 @@
 
 
 
-
+<?php $cat_name = 'contents'; ?>
 <div class="content section-inner">
-  <h2 class="content-category">Contents</h2>
+  <h2 class="content-category"><?php echo get_cat_name(get_category_by_slug( $cat_name )->term_id); ?></h2>
 
 	<?php
   $args = array(       // set up arguments
     'post_type' => 'page',          // Only Pages
 //    'post__not_in' => array(12,18,20),   // Exclude blog,contact
     'orderby' => 'menu_order',
-    'category_name' => 'contents'
+    'category_name' => $cat_name
     );
   $query = new WP_query($args);
   if ($query->have_posts()) :
@@ -99,16 +100,16 @@
 
 
 
-
+<?php $cat_name = 'info'; ?>
 <div class="content section-inner">
-  <h2 class="content-category">Info</h2>
+  <h2 class="content-category"><?php echo get_cat_name(get_category_by_slug( $cat_name )->term_id); ?></h2>
 
 	<?php
   $args = array(       // set up arguments
     'post_type' => 'page',          // Only Pages
 //    'post__not_in' => array(12,18,20),   // Exclude blog,contact
     'orderby' => 'menu_order',
-    'category_name' => 'info'
+    'category_name' => $cat_name
     );
   $query = new WP_query($args);
   if ($query->have_posts()) :
