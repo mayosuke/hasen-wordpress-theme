@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: Default Page
+*/
+?>
+
 <?php get_header(); ?>
 
 <div class="content section-inner">		

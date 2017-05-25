@@ -659,8 +659,12 @@ input[type="button"],
 	text-transform: uppercase;
 }
 
-/* .post:hover .post-overlay { opacity: 1; } */
-.post:hover .archive-post-title { color: #3bc492; }
+.post-overlay {
+    background: rgba(255,255,255,0.7);
+      opacity: 1;
+}
+.posts a:hover .archive-post-title { color: #3bc492; }
+
 
 /* With Background Image */
 
