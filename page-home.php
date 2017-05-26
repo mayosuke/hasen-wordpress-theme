@@ -6,7 +6,7 @@ Template Name: Top Page
 <?php get_header(); ?>
 
 <?php
-$category_names = array( 'services', 'contents', 'info' );
+$category_names = array( 'services', 'contents' );
 foreach ( $category_names as $cat_name ) {
 ?>
 <div class="content section-inner">
