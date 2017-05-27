@@ -14,6 +14,14 @@
 	
 	<body <?php body_class(); ?>>
 			<div class="header section-inner">
+      
+        <div class="mobile-menu-close-icon">
+          <svg viewBox="0 0 24 24"><g stroke="black" stroke-width="3">
+          <path d="M 3 3 L 21 21 M 21 3 L 3 21"></path></g></svg>
+        </div><div class="mobile-menu-open-icon">
+          <svg viewBox="0 0 24 24"><g stroke="black" stroke-width="3">
+          <path d="M 3 3 L 21 3 M 3 12 L 21 12 M 3 21 L 21 21"></path></g></svg>
+        </div>
 		
 			<?php if ( get_theme_mod( 'hitchcock_logo' ) ) : ?>
 			
@@ -60,6 +68,48 @@
 			
 			<?php endif; ?>
 			
+		<div class="navigation">
+			
+			<div class="section-inner">
+				
+				<ul class="main-menu">
+																		
+					<?php if ( has_nav_menu( 'primary' ) ) {
+																		
+						wp_nav_menu( array( 
+						
+							'container' => '', 
+							'items_wrap' => '%3$s',
+							'theme_location' => 'primary', 
+														
+						) ); } else {
+					
+						wp_list_pages( array(
+						
+							'container' => '',
+							'title_li' => ''
+						
+						));
+						
+					} ?>
+					<?php /*
+					<li class="header-search">
+						<form method="get" class="search-form" id="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+							<input type="search" class="search-field" name="s" placeholder="<?php _e('Search Form','hitchcock'); ?>" /> 
+							<a class="search-button" onclick="document.getElementById('search-form').submit(); return false;"><div class="fa fw fa-search"></div></a>
+						</form>
+					</li>
+					*/?>
+				</ul>
+				
+				<div class="clear"></div>
+				
+			</div> <!-- /section-inner -->
+			
+		</div> <!-- /navigation -->
+	
+
+
 		</div> <!-- /header -->	
 
 	

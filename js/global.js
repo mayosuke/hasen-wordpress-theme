@@ -11,17 +11,39 @@ jQuery(document).ready(function($) {
 		$(".mobile-navigation").slideToggle();
 		return false;
 	});
+    $(".mobile-menu-open-icon").on("click", function(){ 
+          console.log('open!');
+          $(".mobile-menu-open-icon").toggle();
+          $(".mobile-menu-close-icon").toggle();
+          $(".main-menu").toggle();
+          return false;
+    });
+    $(".mobile-menu-close-icon").on("click", function(){  
+          console.log('close!');
+          $(".mobile-menu-open-icon").toggle();
+          $(".mobile-menu-close-icon").toggle();
+          $(".main-menu").toggle();
+          return false;
+    });
 	
 	
 	// Hide mobile-navigation > 900
+  /*
 	$(window).resize(function() {
+    var prev = $(window).width();
 		if ($(window).width() > 900) {
-			$(".nav-toggle").removeClass("active");
-			$(".mobile-navigation").hide();
-		}
+      console.log("resize: width > 900");
+      $(".mobile-menu-open-icon").hide();
+      $(".mobile-menu-close-icon").hide();
+      $(".main-menu").css("display","inline-block");
+		} else if ($(window).width() <= 900 && !$('.main-menu').is(':visible')) {
+      console.log("resize: width <= 900");
+      $(".mobile-menu-open-icon").show();
+      $(".mobile-menu-close-icon").hide();
+      $(".main-menu").hide();
+    }
 	});
-	
-	
+	*/
 	// Load Flexslider
     $(".flexslider").flexslider({
         animation: "slide",

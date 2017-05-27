@@ -342,6 +342,12 @@ input[type="button"],
 	top: 60px;
 }
 
+.mobile-menu-close-icon,
+.mobile-menu-open-icon {
+    width: 32px;
+    float: left;
+    display: none;
+}
 
 /* Deep Down --------------------------------------- */
 
@@ -1922,6 +1928,11 @@ img#wpstats { display: none; }
 	.post-content p.pull.right,	
 	.post-content .alignright { margin-right: 0; }
 	
+  .main-menu { display: none; }
+  .mobile-menu-open-icon { display: block; }
+  .main-menu > li { display: block; }
+  .main-menu > li + li { margin-left: 0px; }
+  .main-menu > li + li:before { content: none; }
 	
 }
 
