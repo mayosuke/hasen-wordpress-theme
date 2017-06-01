@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: Index Page
+*/
+?>
 <?php get_header(); ?>
 
 <div class="content section-inner">
