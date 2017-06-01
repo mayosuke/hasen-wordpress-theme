@@ -64,15 +64,23 @@ Template Name: Page with Posts
 
 	<?php endif; ?>
 
+<?php //print_r( $category_of_the_post );
+$cat_slugs = array();
+foreach ( $category_of_the_post as $cat ) {
+  $cat_slugs[] = $cat->category_nicename;
+}
+//print(implode(',', $cat_slugs));
+$page_slug = get_page(get_the_ID())->post_name;
+?>
 
 <?php
   $args = array( 'post_type' => 'post', 'orderby' => 'date', 'order' => 'DESC');
-  //$args = array( 'post_type' => 'post', 'orderby' => 'date', 'order' => 'DESC', 'category_name' => $cat_name );
+  if ($page_slug != 'blog') :
+    $args['category_name'] = implode(',', $cat_slugs);
+  endif;
   $query = new WP_query($args);
-  print_r($query);
   if ($query->have_posts()) :
 ?>
-    <?php print_r( $category_of_the_post ); ?>
 	
 		<?php
 		$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
