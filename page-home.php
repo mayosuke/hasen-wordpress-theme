@@ -29,8 +29,12 @@ foreach ( $category_names as $cat_name ) {
 		
 		<?php endif; ?>
 	
+  <?php if (strcmp($cat_name, 'contents') == 0) : ?>
+		<div class="posts posts-news" id="posts">
+  <?php else : ?>
 		<div class="posts" id="posts">
-				
+  <?php endif; ?>
+	
       <?php
       while ($query->have_posts()) : $query->the_post();
         get_template_part( 'content', get_post_format() );
