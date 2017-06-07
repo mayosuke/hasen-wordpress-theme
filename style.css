@@ -623,6 +623,37 @@ input[type="button"],
 .posts-news .post + .post { margin-left: 2%; }
 .posts-news .post:nth-child(4n+1) { margin-left: 0; }
 
+.latest-posts-list {
+    display: block;
+    float: left;
+    margin-top: 2%;
+    margin-left: 2%;
+    width: 49%;
+}
+.latest-posts-list-item {
+    margin-bottom: 2%;  
+}
+.latest-posts-list-item-date {
+    font-size: 0.875em;
+    color: #3d3d3d;
+    text-transform: uppercase;
+}
+.latest-posts-list-item-title {
+    font-size: 1.5em;
+    line-height: 120%;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222;
+    word-break: break-word;
+    -ms-word-break: break-word;
+}
+.latest-posts-list-item-excerpt {
+    font-size: 1em;
+    color: #3d3d3d;
+    text-transform: uppercase;
+}
+.latest-posts-list a:hover .latest-posts-list-item-title { color: #3bc492; }
+
 .post-overlay {
 	background: #fff;
 	position: absolute;
@@ -665,7 +696,7 @@ input[type="button"],
 .archive-post-date {
 	margin-bottom: 5px;
 	font-size: 0.875em;
-	color: #999;
+	color: #3d3d3d;
 	text-transform: uppercase;
 }
 
@@ -1886,6 +1917,7 @@ img#wpstats { display: none; }
 	.posts .post:nth-child(3n+1) { margin-left: 3.95%; }
 	.posts .post:nth-child(2n+1) { margin-left: 0; }
 	
+  .latest-posts-list { width: 100%; }
 	
 	/* Single Post --------------------------------------- */
 	
